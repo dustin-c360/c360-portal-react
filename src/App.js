@@ -1,8 +1,12 @@
 import React from 'react';
+import Dashboard from './common/Dashboard.js'
 
-function App() {
-  const value = 'World!';
-  return <div>Hello {value}</div>;
-}
+export class App extends React.Component  {
+  render()  {
+    const value = 'World!!';
+    //return <div>Hello {value}</div>;
+    return <Dashboard />
+  }
+};
 
 export default App;
