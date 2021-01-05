@@ -23,7 +23,7 @@ export default class Datastore extends React.Component {
                     <li><b>Engineers</b>, who require ready-to-use data consumption endpoints for their online systems.</li>
                 </ul>
                 
-                The API can be accessed via our Developer Portal <a href={apiLink} target="_blank">here</a>.
+                The API can be accessed via our Developer Portal <a href={apiLink} target="_blank" rel="noopener noreferrer">here</a>.
             </Card>
         </div>
         );

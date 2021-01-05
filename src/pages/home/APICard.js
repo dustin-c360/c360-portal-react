@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer, CartesianGrid} from 'recharts';
 
 export default class APICard extends React.Component {
     render()    {
@@ -15,8 +14,6 @@ export default class APICard extends React.Component {
             paddingLeft: "10px",
             paddingRight: "10px"
         };
-        
-        const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
 
         return (
             <Grid item xs={12} md={4} lg={4}>

@@ -66,7 +66,7 @@ export default class Datastore extends React.Component {
                             </li>
                             <li>Learn more about our attributes with the <b>Discover Attributes</b> tool, provided in the navigation panel on the left.</li>
                         </ol>
-                        <b style={importantNote}>NEVER join any C360 tables with any PII tables. Read our InfoSec policy <a href={infosecLink} target="_blank">here</a>.</b>
+                        <b style={importantNote}>NEVER join any C360 tables with any PII tables. Read our InfoSec policy <a href={infosecLink} target="_blank" rel="noopener noreferrer">here</a>.</b>
                     </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -81,7 +81,7 @@ export default class Datastore extends React.Component {
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
-                        To access C360 attributes via Chimera, follow the sample Python script given <a href={chimeraSampleLink} target="_blank">here</a>.
+                        To access C360 attributes via Chimera, follow the sample Python script given <a href={chimeraSampleLink} target="_blank" rel="noopener noreferrer">here</a>.
                     </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -96,7 +96,7 @@ export default class Datastore extends React.Component {
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
-                        To access via Azure Databricks, follow our sample Databricks notebook given <a href={databricksSampleLink} target="_blank">here</a>.
+                        To access via Azure Databricks, follow our sample Databricks notebook given <a href={databricksSampleLink} target="_blank" rel="noopener noreferrer">here</a>.
                     </Typography>
                     </AccordionDetails>
                 </Accordion>

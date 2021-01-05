@@ -14,7 +14,9 @@ import FlashOnIcon from '@material-ui/icons/FlashOn';
 import {NavLink} from 'react-router-dom';
 
 const aboutC360Link = "https://wiki.grab.com/pages/viewpage.action?spaceKey=BDP&title=Customer+360";
+// eslint-disable-next-line
 const slaStandardsLink = "https://wiki.grab.com/display/BDP/00.01.+SLA+Standards";
+// eslint-disable-next-line
 const crowdsourceLink = "https://wiki.grab.com/pages/viewpage.action?pageId=295123781";
 
 const styleObj = {
