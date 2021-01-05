@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import {NavLink} from 'react-router-dom';
 import {
     BarChart, Bar, XAxis, CartesianGrid, Tooltip
   } from 'recharts';
@@ -15,7 +16,12 @@ export default class AttributesCard extends React.Component {
             paddingTop: "10px",
             paddingBottom: "10px",
             paddingLeft: "10px",
-            paddingRight: "10px"
+            paddingRight: "10px",
+            height: '100%'
+        };
+
+        const navLinkStyleObj = {
+            textDecoration: "none"
         };
 
         const data = [
@@ -47,17 +53,22 @@ export default class AttributesCard extends React.Component {
                                 </BarChart>
                             </div>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                    across all continents except Antarctica
+                                    Accessible through both AWS and Azure ecosystems, the Datastore is a rich, crowdsourced, customer-centric feature set 
+                                    from many teams and databases across Grab. It also contains predicted ML attributes, as well as some <em>exclusive</em> data
+                                    points you won't find anywhere else!
                                 </Typography>
                             </CardContent>
-                            <CardActions>
-                                <Button size="small" color="primary">
-                                Discover Attributes
-                                </Button>
-                                <Button size="small" color="primary">
-                                Access Datastore
-                                </Button>
+                            <CardActions>                            
+                                <NavLink to='/discover' style={navLinkStyleObj}>
+                                    <Button size="small" color="primary">
+                                    Discover Attributes
+                                    </Button>
+                                </NavLink>
+                                <NavLink to='/datastore' style={navLinkStyleObj}>
+                                    <Button size="small" color="primary">
+                                    Access Datastore
+                                    </Button>
+                                </NavLink>
                             </CardActions>
                         </Card>
                 </Grid>

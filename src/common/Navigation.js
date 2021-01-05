@@ -12,6 +12,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import {NavLink} from 'react-router-dom';
+import Badge from '@material-ui/core/Badge';
 
 const aboutC360Link = "https://wiki.grab.com/pages/viewpage.action?spaceKey=BDP&title=Customer+360";
 // eslint-disable-next-line
@@ -96,7 +97,9 @@ export const learnMoreListItems = (
     <NavLink to='/releases' style={styleObj}>
       <ListItem button>
         <ListItemIcon>
-          <NewReleasesIcon />
+          <Badge color="secondary" variant="dot">
+            <NewReleasesIcon />
+          </Badge>
         </ListItemIcon>
         <ListItemText primary="Release Log" />
       </ListItem>

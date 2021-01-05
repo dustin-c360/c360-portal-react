@@ -28,7 +28,7 @@ import AboutPage from './pages/About.js';
 import SLAPage from './pages/SLA.js';
 import CrowdsourcePage from './pages/Crowdsource.js';
 import ReleasesPage from './pages/Releases.js';
-import SegmentExplorerPage from './pages/integrations/Integrations.js';
+import IntegrationsPage from './pages/integrations/Integrations.js';
 import './index.css';
 
 function Copyright() {
@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
+    backgroundColor: '#000'
   },
   toolbarIcon: {
     display: 'flex',
@@ -188,7 +189,7 @@ export default function App() {
             <Route path="/sla" component={SLAPage}/>
             <Route path="/crowdsource" component={CrowdsourcePage}/>
             <Route path="/releases" component={ReleasesPage}/>
-            <Route path="/integrations" component={SegmentExplorerPage}/>
+            <Route path="/integrations" component={IntegrationsPage}/>
             <Box pt={4}>
               <Copyright />
             </Box>
