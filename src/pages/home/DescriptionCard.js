@@ -16,10 +16,6 @@ export default class DescriptionCard extends React.Component {
             paddingRight: "10px",
         };
 
-        const iconStyleObj = {
-            height: '100%'
-        };
-
         return (
             <Grid item xs={12}>
                 <List style={styleObj}>
