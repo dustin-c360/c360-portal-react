@@ -25,9 +25,15 @@ export default class IntegrationsCard extends React.Component {
             <Grid item xs={12} md={4} lg={4}>
                         <Card style={styleObj}>
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2" align='center'>
-                                    Powered by C360
-                                </Typography>
+                                <div align='center'>
+                                    <Typography variant="h5" component="h2" align='center'>
+                                        Powered by C360
+                                    </Typography>
+                                    <Typography gutterBottom variant="h6" component="h2">
+                                    (1 Product / xxx Integrations)
+                                    </Typography>
+                                </div>
+
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     The deep feature sets available on the C360 platform are leveraged in other data tools and platforms across Grab;
                                     from quick and efficient application calls in CSE, to full-blown self-serve segment analysis.
