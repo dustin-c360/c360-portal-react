@@ -12,8 +12,8 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import { homeListItem, getStartedListItems, learnMoreListItems, poweredByC360ListItems } from './common/Navigation';
 import {
@@ -147,7 +147,7 @@ export default function App() {
             onClick={handleDrawerOpen}
             className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
           >
-            <MenuIcon />
+            <ChevronRightIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Customer360 Portal
@@ -158,6 +158,7 @@ export default function App() {
         </Toolbar>
       </AppBar>
       <HashRouter> {/* Need to surround nav links and main content container with HashRouter for routing to work */}
+      
         <Drawer
           variant="permanent"
           classes={{
@@ -178,6 +179,7 @@ export default function App() {
           <Divider />
           <List>{poweredByC360ListItems}</List>
         </Drawer>
+
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
           <Container maxWidth="lg" className={classes.container}>

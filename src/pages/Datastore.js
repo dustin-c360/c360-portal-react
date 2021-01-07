@@ -5,6 +5,12 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Card from '@material-ui/core/Card';
+import DatabricksIcon from './databricks.png';
+import SynapseIcon from './synapse.svg';
+import PrestoIcon from './presto.png';
+import GrabIcon from './grab.svg';
+import AWSIcon from './aws.png';
+import AzureIcon from './azure.jpg';
 
 export default class Datastore extends React.Component {
     render()    {
@@ -21,6 +27,12 @@ export default class Datastore extends React.Component {
             paddingRight: "10px",
             paddingTop: "10px",
             paddingBottom: "10px"
+        }
+
+        const icon = {
+            width: '16px',
+            height: '16px',
+            marginRight: '5px',
         }
 
         const infosecLink = "https://docs.google.com/document/d/13YhuchO4rqIz51g1kM_uwveNvNOX94-Mdx15rfGYYTY/edit?usp=sharing";
@@ -47,7 +59,12 @@ export default class Datastore extends React.Component {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography style={accordionHeader}>Access Datastore via Presto</Typography>
+                    <Typography style={accordionHeader}>
+                        <img src={AWSIcon} alt='' style={icon}/> 
+                        <img src={PrestoIcon} alt='' style={icon}/> 
+                        Access Datastore via Presto
+                    </Typography>
+
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
@@ -77,7 +94,12 @@ export default class Datastore extends React.Component {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography style={accordionHeader}>Access Datastore via Chimera (S3)</Typography>
+                    <Typography style={accordionHeader}>
+                        <img src={AWSIcon} alt='' style={icon}/>
+                        <img src={GrabIcon} alt='' style={icon}/> 
+                        Access Datastore via Chimera (S3)
+                    </Typography>
+
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
@@ -92,7 +114,10 @@ export default class Datastore extends React.Component {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography style={accordionHeader}>Access Datastore via Azure Databricks (Delta Lake)</Typography>
+                    <Typography style={accordionHeader}>
+                        <img src={AzureIcon} alt='' style={icon}/> 
+                        <img src={DatabricksIcon} alt='' style={icon}/> 
+                        Access Datastore via Azure Databricks (Delta Lake)</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
@@ -107,7 +132,11 @@ export default class Datastore extends React.Component {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography style={accordionHeader}>Access Datastore via Azure Synapse (ADW)</Typography>
+                    <Typography style={accordionHeader}>
+                        <img src={AzureIcon} alt='' style={icon}/> 
+                        <img src={SynapseIcon} alt='' style={icon}/> 
+                        Access Datastore via Azure Synapse (ADW)
+                    </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>
@@ -122,7 +151,12 @@ export default class Datastore extends React.Component {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography style={accordionHeader}>Access Datastore via SegP</Typography>
+                    <Typography style={accordionHeader}>
+                        <img src={AWSIcon} alt='' style={icon}/> 
+                        <img src={GrabIcon} alt='' style={icon}/> 
+                        Access Datastore via SegP
+                    </Typography>
+
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>

@@ -9,15 +9,14 @@ import {NavLink} from 'react-router-dom';
 import {Radar, RadarChart, PolarGrid,
     PolarAngleAxis, PolarRadiusAxis} from 'recharts';
 
-
     const data = [
-        { subject: 'Internal', A: 75},
-        { subject: 'APIs', A: 20},
-        { subject: 'Non-Technical', A: 100},
-        { subject: 'Other', A: 30},
-        { subject: 'Technical', A: 85},
-        { subject: 'Online Apps', A: 50}
-    ];
+    {subject: 'Online Apps', A: Math.random()*100},
+    {subject: 'Internal', A: Math.random()*100},
+    {subject: 'Non-Technical', A: Math.random()*100},
+    {subject: 'Data', A: Math.random()*100},
+    {subject: 'Technical', A: Math.random()*100},
+    {subject: 'API', A: Math.random()*100},
+  ];
 
 export default class IntegrationsCard extends React.Component {
     render()    {

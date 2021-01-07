@@ -11,7 +11,7 @@ export default class EmptyIntegrationSlot extends React.Component {
         };
 
         return (
-            <Grid item xs={12} md={12} lg={12}>
+            <Grid hidden item xs={12} md={12} lg={12}>
                 <Card style={styleObj}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2" align='center'>
