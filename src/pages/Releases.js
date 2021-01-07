@@ -34,10 +34,10 @@ export default class Releases extends React.Component{
                 <Table aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell align="center">Version</TableCell>
-                            <TableCell align="center">Status</TableCell>
-                            <TableCell align="center">Release Date</TableCell>
-                            <TableCell align="center">Details</TableCell>
+                            <TableCell align="center"><b>Version</b></TableCell>
+                            <TableCell align="center"><b>Status</b></TableCell>
+                            <TableCell align="center"><b>Release Date</b></TableCell>
+                            <TableCell align="center"><b>Details</b></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

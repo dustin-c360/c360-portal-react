@@ -6,6 +6,18 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import {NavLink} from 'react-router-dom';
+import {Radar, RadarChart, PolarGrid,
+    PolarAngleAxis, PolarRadiusAxis} from 'recharts';
+
+
+    const data = [
+        { subject: 'Internal', A: 75},
+        { subject: 'APIs', A: 20},
+        { subject: 'Non-Technical', A: 100},
+        { subject: 'Other', A: 30},
+        { subject: 'Technical', A: 85},
+        { subject: 'Online Apps', A: 50}
+    ];
 
 export default class IntegrationsCard extends React.Component {
     render()    {
@@ -32,11 +44,19 @@ export default class IntegrationsCard extends React.Component {
                                     <Typography gutterBottom variant="h6" component="h2">
                                     (1 Product / xxx Integrations)
                                     </Typography>
+
+                                    <RadarChart width={300} height={150} data={data}>
+                                        <PolarGrid />
+                                        <PolarAngleAxis dataKey="subject" />
+                                        <PolarRadiusAxis/>
+                                        <Radar name="Integrations" dataKey="A" stroke="#00b14f" fill="#00b14f" fillOpacity={0.6}/>
+                                    </RadarChart>
                                 </div>
 
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    The deep feature sets available on the C360 platform are leveraged in other data tools and platforms across Grab;
-                                    from quick and efficient application calls in CSE, to full-blown self-serve segment analysis.
+                                    The deep feature sets available on the C360 platform are leveraged in other tools and platforms across Grab,
+                                    from application calls for PAX data in CSE, to dashboards for self-serve segment analysis.
+                                    Explore our integrations, use them for your work, and get inspired for your next customer-centric data product!
                                 </Typography>
                             </CardContent>
                             <CardActions>
